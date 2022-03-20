@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <action android:id="@+id/action_global_firstFragment" app:destination="@id/firstFragment"/>
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.navapp.FirstFragment"
+        android:label="FirstFragment"
+        tools:layout="@layout/first_fragment"
+        >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.navapp.SecondFragment"
+        android:label="SecondFragment"
+        tools:layout="@layout/second_fragment" >
+        <action
+            android:id="@+id/action_secondFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_sixFragment"
+            app:destination="@id/sixFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.navapp.ThirdFragment"
+        android:label="ThirdFragment"
+        tools:layout="@layout/third_fragment" >
+        <action
+            android:id="@+id/action_thirdFragment_to_sevenFragment"
+            app:destination="@id/sevenFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_eightFragment"
+            app:destination="@id/eightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourFragment"
+        android:name="com.example.navapp.FourFragment"
+        android:label="FourFragment"
+        tools:layout="@layout/four_fragment" >
+        <action
+            android:id="@+id/action_fourFragment_to_tenFragment"
+            app:destination="@id/tenFragment" />
+        <action
+            android:id="@+id/action_fourFragment_to_nineFragment"
+            app:destination="@id/nineFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fiveFragment"
+        android:name="com.example.navapp.FiveFragment"
+        android:label="FiveFragment"
+        tools:layout="@layout/five_fragment" />
+    <fragment
+        android:id="@+id/sixFragment"
+        android:name="com.example.navapp.SixFragment"
+        android:label="SixFragment"
+        tools:layout="@layout/six_fragment" />
+    <fragment
+        android:id="@+id/sevenFragment"
+        android:name="com.example.navapp.SevenFragment"
+        android:label="SevenFragment"
+        tools:layout="@layout/seven_fragment" />
+    <fragment
+        android:id="@+id/eightFragment"
+        android:name="com.example.navapp.EightFragment"
+        android:label="EightFragment"
+        tools:layout="@layout/eight_fragment" />
+    <fragment
+        android:id="@+id/nineFragment"
+        android:name="com.example.navapp.NineFragment"
+        android:label="NineFragment"
+        tools:layout="@layout/nine_fragment" />
+    <fragment
+        android:id="@+id/tenFragment"
+        android:name="com.example.navapp.TenFragment"
+        android:label="TenFragment"
+        tools:layout="@layout/ten_fragment" />
+</navigation>
